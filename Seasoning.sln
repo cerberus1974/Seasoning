@@ -5,11 +5,16 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4C4D9F7B-5B13-49DE-9509-F3AA9D4BCE1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seasoning", "src\Seasoning\Seasoning.csproj", "{3A471C90-433D-4D6A-B8E9-33C921A30A34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Seasoning", "src\Seasoning\Seasoning.csproj", "{3A471C90-433D-4D6A-B8E9-33C921A30A34}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2A5C426D-162F-47E4-A49F-F9D5CB362DE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seasoning.Tests", "tests\Seasoning.Tests\Seasoning.Tests.csproj", "{11F1BB82-EDD1-4A89-8072-AB5CFDDEA6C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Seasoning.Tests", "tests\Seasoning.Tests\Seasoning.Tests.csproj", "{11F1BB82-EDD1-4A89-8072-AB5CFDDEA6C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B5E3899C-5B40-4681-8DE7-28217343514B}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +24,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3A471C90-433D-4D6A-B8E9-33C921A30A34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -49,8 +51,14 @@ Global
 		{11F1BB82-EDD1-4A89-8072-AB5CFDDEA6C4}.Release|x86.ActiveCfg = Release|Any CPU
 		{11F1BB82-EDD1-4A89-8072-AB5CFDDEA6C4}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3A471C90-433D-4D6A-B8E9-33C921A30A34} = {4C4D9F7B-5B13-49DE-9509-F3AA9D4BCE1E}
 		{11F1BB82-EDD1-4A89-8072-AB5CFDDEA6C4} = {2A5C426D-162F-47E4-A49F-F9D5CB362DE6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1ED69B7B-3CAF-4456-B23C-E0E21A7DBE75}
 	EndGlobalSection
 EndGlobal
