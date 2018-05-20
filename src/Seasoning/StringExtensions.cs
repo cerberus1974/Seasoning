@@ -1,3 +1,5 @@
+using System;
+
 namespace Seasoning.StringExtensions
 {
     public static class StringExtensions
@@ -16,6 +18,11 @@ namespace Seasoning.StringExtensions
         public static string Formats(this string format, params object[] args)
         {
             return string.Format(format, args);
+        }
+
+        public static string Slice(this string value, int startIndex, int length)
+        {
+            return value.Substring(startIndex, Math.Min(value.Length - startIndex, length));
         }
     }
 }

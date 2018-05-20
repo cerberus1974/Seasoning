@@ -46,5 +46,18 @@ namespace Seasoning.Tests
         {
             "{0} Can {1}".Formats("I", "Fly").Is("I Can Fly");
         }
+
+        [Fact]
+        public void Slice_Substrig()
+        {
+            "abcdefg".Slice(0, 2).Is("ab");
+            "abcdefg".Slice(1, 2).Is("bc");
+        }
+
+        [Fact]
+        public void Slice_NotException()
+        {
+            "abc".Slice(1, 3).Is("bc");
+        }
     }
 }
