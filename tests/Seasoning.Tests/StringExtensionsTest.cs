@@ -40,5 +40,11 @@ namespace Seasoning.Tests
         {
             ((string)null).IsNotNullOrEmpty().IsFalse();
         }
+
+        [Fact]
+        public void Formats_CanFormat()
+        {
+            "{0} Can {1}".Formats("I", "Fly").Is("I Can Fly");
+        }
     }
 }

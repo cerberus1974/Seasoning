@@ -11,5 +11,11 @@ namespace Seasoning.StringExtensions
         {
             return !value.IsNullOrEmpty();
         }
+
+
+        public static string Formats(this string format, params object[] args)
+        {
+            return string.Format(format, args);
+        }
     }
 }
