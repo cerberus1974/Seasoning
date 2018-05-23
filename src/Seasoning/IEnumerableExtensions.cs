@@ -13,5 +13,17 @@ namespace Seasoning.IEnumerableExtensions
 
             return Enumerable.Empty<T>();
         }
+
+        public static bool IsEmpty<T>(this IEnumerable<T> values)
+        {
+            return !values.Any();
+        }
+
+        public static bool IsNullOrEmpty<T>(this IEnumerable<T> values)
+        {
+            if (values == null) return true;
+
+            return values.IsEmpty();
+        }
     }
 }
