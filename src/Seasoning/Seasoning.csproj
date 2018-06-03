@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/cerberus1974/Seasoning</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/cerberus1974/Seasoning</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/cerberus1974/Seasoning/blob/master/LICENSE</PackageLicenseUrl>
+    <Description>Seasoning is Utility Class Library</Description>
   </PropertyGroup>
 
 </Project>
