@@ -50,5 +50,21 @@ namespace Seasoning.Tests
         {
             new List<int> { 1 }.IsNullOrEmpty().IsFalse();
         }
+
+        [Fact]
+        public void JoinString_Join()
+        {
+            new[] { "a", "b", "c" }.JoinString(",").Is("a,b,c");
+            new[] { 1, 2, 3 }.JoinString("_").Is("1_2_3");
+        }
+
+        [Fact]
+        public void JoinString_NotException()
+        {
+            new List<string>().JoinString(",").Is("");
+
+            List<string> list = null;
+            list.JoinString(",").Is("");
+        }
     }
 }

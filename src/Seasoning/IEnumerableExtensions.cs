@@ -25,5 +25,10 @@ namespace Seasoning.IEnumerableExtensions
 
             return values.IsEmpty();
         }
+
+        public static string JoinString<T>(this IEnumerable<T> values, string separator)
+        {
+            return string.Join(separator, values.NullToEmpty());
+        }
     }
 }
