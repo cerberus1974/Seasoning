@@ -24,5 +24,16 @@ namespace Seasoning.StringExtensions
         {
             return value.Substring(startIndex, Math.Min(value.Length - startIndex, length));
         }
+
+        public static string Repeat(this string value, int count)
+        {
+            if (value == null) return null;
+
+            var result = "";
+
+            for (var i = 0; i < count; i++) result += value;
+
+            return result;
+        }
     }
 }

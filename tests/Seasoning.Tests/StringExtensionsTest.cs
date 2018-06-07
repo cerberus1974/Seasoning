@@ -59,5 +59,20 @@ namespace Seasoning.Tests
         {
             "abc".Slice(1, 3).Is("bc");
         }
+
+        [Fact]
+        public void Repeat_Multiplication()
+        {
+            "a".Repeat(5).Is("aaaaa");
+            "abc".Repeat(2).Is("abcabc");
+            "".Repeat(10).Is("");
+        }
+
+        [Fact]
+        public void Repeat_NullIfNull()
+        {
+            string s = null;
+            s.Repeat(5).IsNull();
+        }
     }
 }
