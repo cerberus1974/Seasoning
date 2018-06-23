@@ -7,6 +7,7 @@
     <RepositoryUrl>https://github.com/cerberus1974/Seasoning</RepositoryUrl>
     <PackageLicenseUrl>https://github.com/cerberus1974/Seasoning/blob/master/LICENSE</PackageLicenseUrl>
     <Description>Seasoning is Utility Class Library</Description>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
 </Project>
