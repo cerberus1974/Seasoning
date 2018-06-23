@@ -32,8 +32,13 @@ namespace Seasoning.StringExtensions
             var result = "";
 
             for (var i = 0; i < count; i++) result += value;
-
+            
             return result;
+        }
+
+        public static int ToInt32(this string value)
+        {
+            return Int32.Parse(value);
         }
     }
 }

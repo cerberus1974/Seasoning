@@ -1,4 +1,5 @@
 using Seasoning.StringExtensions;
+using System;
 using Xunit;
 
 namespace Seasoning.Tests
@@ -73,6 +74,21 @@ namespace Seasoning.Tests
         {
             string s = null;
             s.Repeat(5).IsNull();
+        }
+
+        [Fact]
+        public void ToInt32_CanConvert()
+        {
+            "0".ToInt32().Is(0);
+            "1".ToInt32().Is(1);
+            "-1".ToInt32().Is(-1);
+        }
+
+        [Fact]
+        public void ToInt32_Exception()
+        {
+            Assert.Throws<FormatException>(() => "a".ToInt32());
+            Assert.Throws<OverflowException>(() => ((long)Int32.MaxValue + 1).ToString().ToInt32());
         }
     }
 }
